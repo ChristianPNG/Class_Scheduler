@@ -2,7 +2,7 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test --coverage
 
-FAIL src/Tests/MakePlan.test.tsx (17.328 s)
+FAIL src/Tests/MakePlan.test.tsx (17.572 s)
   ● MakePlan Component tests › Delete plan works when its created
 
     TestingLibraryElementError: Unable to find an element with the text: plan 1. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
@@ -114,14 +114,14 @@ FAIL src/Tests/MakePlan.test.tsx (17.328 s)
 
 PASS src/Tests/DegreeRequirement.test.tsx
 PASS src/Tests/CourseEdit.test.tsx
-PASS src/Tests/TableContentsSpring.test.tsx (11.067 s)
-PASS src/Tests/TableContentsFall.test.tsx (34.09 s)
-PASS src/Tests/AddSemester.test.tsx (39.511 s)
-PASS src/Tests/Years.test.tsx
-PASS src/Tests/TableContentsWinter.test.tsx (9.842 s)
+PASS src/Tests/TableContentsSpring.test.tsx (10.001 s)
+PASS src/Tests/TableContentsFall.test.tsx (34.311 s)
+PASS src/Tests/AddSemester.test.tsx (40.18 s)
+PASS src/Tests/TableContentsWinter.test.tsx (10.113 s)
 PASS src/Tests/PlanContainer.test.tsx
-PASS src/Tests/YearContainer.test.tsx
+PASS src/Tests/Years.test.tsx
 PASS src/Tests/ShowFallTable.test.tsx
+PASS src/Tests/YearContainer.test.tsx
 FAIL src/Tests/Homepage.test.tsx
   ● Homepage Component tests › renders Kiefer's name somewhere
 
@@ -240,7 +240,7 @@ FAIL src/Tests/Homepage.test.tsx
       at Object.<anonymous> (src/Tests/Homepage.test.tsx:23:29)
 
 PASS src/Tests/App.test.tsx
-PASS src/Tests/TableContentsSummer.test.tsx (9.625 s)
+PASS src/Tests/TableContentsSummer.test.tsx (9.812 s)
 ---------------------------|---------|----------|---------|---------|----------------------------
 File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s          
 ---------------------------|---------|----------|---------|---------|----------------------------
@@ -285,5 +285,5 @@ All files                  |   93.36 |    85.92 |   97.92 |   93.36 |
 Test Suites: 2 failed, 12 passed, 14 total
 Tests:       3 failed, 121 passed, 124 total
 Snapshots:   0 total
-Time:        46.739 s
+Time:        46.95 s
 Ran all test suites.
