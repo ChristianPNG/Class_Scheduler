@@ -1,7 +1,7 @@
 {
     "type": "module",
     "name": "react-typescript-starter",
-    "homepage": "homepage",
+    "homepage": "https://christianpng.github.io/Class_Scheduler/",
     "version": "0.1.0",
     "private": true,
     "dependencies": {

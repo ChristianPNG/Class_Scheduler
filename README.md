@@ -1,19 +1,51 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=7543386&assignment_repo_type=AssignmentRepo)
-# React TypeScript Starter Repo
+# Class Scheduler
 
-Hello! This repository has been pre-configured with eslint and gh-pages to automatically deploy your app when you push to the main branch.
+This is a TypeScript-based Class Scheduler application built using React. The project allows users to plan and track their entire college course journey, specifically tailored for Computer Science (CS) students. Users can create and customize multiple plans, select a concentration, and the scheduler will automatically recognize and track the requirements for the chosen concentration. Users can add, edit, and delete classes, and the requirements will dynamically update based on the courses selected. Additionally, there is a session storage save feature, allowing users to persist data across multiple sessions.
 
-You will, however, need to finish setting up the deployment.
+## Features
 
-### 1. Generate a personal access token
+Create and manage multiple plans for your entire college journey.
+Select a concentration within your CS major and track specific requirements.
+Dynamic requirement updates when classes are added, edited, or removed.
+Select from every real class in the University of Delaware’s course catalog.
+Session storage save to retain plan data across sessions.
+124 tests using Jest to ensure application stability and correctness.
 
-1. Click on your picture -> `settings` in the top right of Github.
-2. Then, scroll to `Developer Settings` and click `Personal access tokens`
-3. Generate a new token with `repo` access and no expiration date.
-4. Make sure you copy the created token as you will not be able to see it after this.
+## Technologies Used
 
-### 2. Add a secret to the forked repo
+TypeScript
+React
+Jest for testing
 
-Back in this repository, go to `settings` -> `secrets` -> `Actions` and click the `New repository secret` button in the topright.
+## Setup and Installation
 
-Name the secret "GH_TOKEN" and paste in the token you copied in the previous step.
+Clone the repository
+
+Install dependencies
+
+`npm install`
+
+Start the development server:
+
+`npm run start`
+
+Running Tests
+To run the test suite, use the following command:
+
+`npm run test`
+
+for more detailed metrics use
+
+`npm run test:cov`
+
+## Usage
+
+Start by creating a new plan for your college journey.
+Select a concentration within your CS major.
+Add, edit, or delete classes as you progress.
+Use the session storage feature to save and revisit your plans at any time.
+
+## Acknowledgements
+
+-   kieferyost - partner in project
+-   acbart - setup boiler plate

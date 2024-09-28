@@ -24,7 +24,7 @@ export function MakePlan(): JSX.Element {
     function newPlan(): void {
         setVisible(false);
         const newPlan: plan = {
-            title: "plan " + Counter,
+            title: "New Plan",
             id: Counter,
             description: "",
             degree: degree
@@ -126,17 +126,6 @@ export function MakePlan(): JSX.Element {
     return (
         <div className="makePlan-background">
             <div>
-                <Button
-                    style={{
-                        left: "60ch",
-                        position: "relative",
-                        backgroundColor: "green"
-                    }}
-                    onClick={savePlans}
-                >
-                    Save plans
-                </Button>
-
                 {plans.map((plan: plan) => (
                     <div key={plan.id}>
                         <PlanContainer
@@ -147,6 +136,17 @@ export function MakePlan(): JSX.Element {
                         <hr></hr>
                     </div>
                 ))}
+                <Button
+                    style={{
+                        left: "60ch",
+                        top: "4.4ch",
+                        position: "relative",
+                        backgroundColor: "green"
+                    }}
+                    onClick={savePlans}
+                >
+                    Save plans
+                </Button>
                 <div>
                     <Button onClick={() => setVisible(true)}>New plan</Button>
                 </div>
