@@ -1,5 +1,7 @@
 # Class Scheduler
 
+Deployment: https://christianpng.github.io/Class_Scheduler/
+
 This is a TypeScript-based Class Scheduler application built using React. The project allows users to plan and track their entire college course journey, specifically tailored for Computer Science (CS) students. Users can create and customize multiple plans, select a concentration, and the scheduler will automatically recognize and track the requirements for the chosen concentration. Users can add, edit, and delete classes, and the requirements will dynamically update based on the courses selected. Additionally, there is a session storage save feature, allowing users to persist data across multiple sessions.
 
 ## Features
