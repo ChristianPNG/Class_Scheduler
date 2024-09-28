@@ -1,0 +1,289 @@
+
+> react-typescript-starter@0.1.0 test
+> react-scripts test --coverage
+
+FAIL src/Tests/MakePlan.test.tsx (17.328 s)
+  ● MakePlan Component tests › Delete plan works when its created
+
+    TestingLibraryElementError: Unable to find an element with the text: plan 1. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"makePlan-background"[39m
+        [36m>[39m
+          [36m<div>[39m
+            [36m<div>[39m
+              [36m<div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"plan"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"row"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                      [33mstyle[39m=[32m"overflow: clip; text-align: left;"[39m
+                    [36m>[39m
+                      [36m<b[39m
+                        [33mstyle[39m=[32m"font-size: 4ch;"[39m
+                      [36m>[39m
+                        [0mNew Plan[0m
+                      [36m</b>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                      [33mstyle[39m=[32m"word-break: break-all;"[39m
+                    [36m>[39m
+                      [36m<p[39m
+                        [33mstyle[39m=[32m"font-size: 2ch; margin-top: 2ch;"[39m
+                      [36m/>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m/>[39m
+                  [36m</div>[39m
+                  [36m<div[39m
+                    [33mstyle[39m=[32m"float: right; padding-right: 2ch;"[39m
+                  [36m>[39m
+                    [36m<a[39m
+                      [33mhref[39m=[32m"/showplan"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"orangeButton btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mShow[0m
+                      [36m</button>[39m
+                    [36m</a>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"orangeButton btn btn-primary"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mEdit[0m
+                    [36m</button>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"btn btn-primary"[39m
+                      [33mstyle[39m=[32m"background-color: darkRed; margin-left: 2ch; margin-top: 1ch; font-size: 1ch;"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mDelete[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<hr />[39m
+            [36m</div>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mstyle[39m=[32m"left: 60ch; top: 4.4ch; position: relative; background-color: green;"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mSave plans[0m
+            [36m</button>[39m
+            [36m<div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-primary"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mNew plan[0m
+              [36m</button>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"main"[39m
+            [36m/>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+      233 |         });
+      234 |         createButton.click();
+    > 235 |         const plan: HTMLElement = screen.getByText("plan 1");
+          |                                          ^
+      236 |         const deleteButton: HTMLElement = screen.getByText("Delete");
+      237 |         deleteButton.click();
+      238 |         expect(plan).not.toBeInTheDocument();
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at allQuery (node_modules/@testing-library/dom/dist/query-helpers.js:90:38)
+      at query (node_modules/@testing-library/dom/dist/query-helpers.js:62:17)
+      at getByText (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/Tests/MakePlan.test.tsx:235:42)
+
+PASS src/Tests/DegreeRequirement.test.tsx
+PASS src/Tests/CourseEdit.test.tsx
+PASS src/Tests/TableContentsSpring.test.tsx (11.067 s)
+PASS src/Tests/TableContentsFall.test.tsx (34.09 s)
+PASS src/Tests/AddSemester.test.tsx (39.511 s)
+PASS src/Tests/Years.test.tsx
+PASS src/Tests/TableContentsWinter.test.tsx (9.842 s)
+PASS src/Tests/PlanContainer.test.tsx
+PASS src/Tests/YearContainer.test.tsx
+PASS src/Tests/ShowFallTable.test.tsx
+FAIL src/Tests/Homepage.test.tsx
+  ● Homepage Component tests › renders Kiefer's name somewhere
+
+    TestingLibraryElementError: Unable to find an element with the text: /Kiefer Yost/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"App"[39m
+        [36m>[39m
+          [36m<header[39m
+            [33mclass[39m=[32m"App-header"[39m
+          [36m>[39m
+            [0mUD CIS SCHEDULER[0m
+            [36m<br />[39m
+          [36m</header>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"makePlan-background"[39m
+          [36m>[39m
+            [36m<div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-primary"[39m
+                [33mstyle[39m=[32m"left: 60ch; top: 4.4ch; position: relative; background-color: green;"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mSave plans[0m
+              [36m</button>[39m
+              [36m<div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mNew plan[0m
+                [36m</button>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"main"[39m
+              [36m/>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+      17 |     });*/
+      18 |     test("renders Kiefer's name somewhere", () => {
+    > 19 |         const name = screen.getByText(/Kiefer Yost/i);
+         |                             ^
+      20 |         expect(name).toBeInTheDocument();
+      21 |     });
+      22 |     test("renders Chritian's name somewhere", () => {
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at allQuery (node_modules/@testing-library/dom/dist/query-helpers.js:90:38)
+      at query (node_modules/@testing-library/dom/dist/query-helpers.js:62:17)
+      at getByText (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/Tests/Homepage.test.tsx:19:29)
+
+  ● Homepage Component tests › renders Chritian's name somewhere
+
+    TestingLibraryElementError: Unable to find an element with the text: /Christian Rullan/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"App"[39m
+        [36m>[39m
+          [36m<header[39m
+            [33mclass[39m=[32m"App-header"[39m
+          [36m>[39m
+            [0mUD CIS SCHEDULER[0m
+            [36m<br />[39m
+          [36m</header>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"makePlan-background"[39m
+          [36m>[39m
+            [36m<div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-primary"[39m
+                [33mstyle[39m=[32m"left: 60ch; top: 4.4ch; position: relative; background-color: green;"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mSave plans[0m
+              [36m</button>[39m
+              [36m<div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mNew plan[0m
+                [36m</button>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"main"[39m
+              [36m/>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+      21 |     });
+      22 |     test("renders Chritian's name somewhere", () => {
+    > 23 |         const name = screen.getByText(/Christian Rullan/i);
+         |                             ^
+      24 |         expect(name).toBeInTheDocument();
+      25 |     });
+      26 | });
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at allQuery (node_modules/@testing-library/dom/dist/query-helpers.js:90:38)
+      at query (node_modules/@testing-library/dom/dist/query-helpers.js:62:17)
+      at getByText (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/Tests/Homepage.test.tsx:23:29)
+
+PASS src/Tests/App.test.tsx
+PASS src/Tests/TableContentsSummer.test.tsx (9.625 s)
+---------------------------|---------|----------|---------|---------|----------------------------
+File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s          
+---------------------------|---------|----------|---------|---------|----------------------------
+All files                  |   93.36 |    85.92 |   97.92 |   93.36 |                            
+ src                       |     100 |      100 |     100 |     100 |                            
+  App.tsx                  |     100 |      100 |     100 |     100 |                            
+ src/Components            |   88.37 |    69.23 |   95.31 |   88.37 |                            
+  AddSemester.tsx          |     100 |      100 |     100 |     100 |                            
+  CourseEdit.tsx           |   88.13 |       50 |     100 |   88.13 | 92,117,141,170,214,221-222 
+  DegreeRequirement.tsx    |     100 |       50 |     100 |     100 | 38-97                      
+  Homepage.tsx             |     100 |      100 |     100 |     100 |                            
+  MakePlan.tsx             |     100 |      100 |     100 |     100 |                            
+  PlanContainer.tsx        |   79.16 |    66.66 |      75 |   79.16 | 25-28,47,65                
+  YearContainer.tsx        |   93.75 |     87.5 |     100 |   93.75 | 36                         
+  Years.tsx                |   70.73 |       30 |   83.33 |   70.73 | 42-55,100                  
+ src/Concentrations        |   95.23 |    90.85 |     100 |   95.23 |                            
+  AI.tsx                   |   95.31 |     90.9 |     100 |   95.31 | 28,33,48                   
+  Bioinformatics.tsx       |   95.45 |     91.3 |     100 |   95.45 | 28,33,48                   
+  Cybersecurity.tsx        |   95.31 |     90.9 |     100 |   95.31 | 28,33,48                   
+  DataScience.tsx          |   95.65 |     91.3 |     100 |   95.65 | 28,33,48                   
+  HPC.tsx                  |   95.31 |     90.9 |     100 |   95.31 | 27,32,47                   
+  SystemsAndNetworks.tsx   |   95.65 |     91.3 |     100 |   95.65 | 30,35,50                   
+  Theory.tsx               |   95.31 |     90.9 |     100 |   95.31 | 28,33,48                   
+  Traditional.tsx          |   93.18 |    88.88 |     100 |   93.18 | 33,38,53                   
+ src/Interfaces            |       0 |        0 |       0 |       0 |                            
+  Courses.ts               |       0 |        0 |       0 |       0 |                            
+  coursePopupInterface.tsx |       0 |        0 |       0 |       0 |                            
+  degreeInterface.tsx      |       0 |        0 |       0 |       0 |                            
+  semesterInterfaces.tsx   |       0 |        0 |       0 |       0 |                            
+  yearInterface.tsx        |       0 |        0 |       0 |       0 |                            
+ src/TableComponents       |   93.68 |    82.14 |   96.55 |   93.68 |                            
+  ShowFallTable.tsx        |     100 |      100 |     100 |     100 |                            
+  ShowSpringTable.tsx      |     100 |      100 |     100 |     100 |                            
+  ShowSummerTable.tsx      |     100 |      100 |     100 |     100 |                            
+  ShowWinterTable.tsx      |     100 |      100 |     100 |     100 |                            
+  TableContentsFall.tsx    |   93.61 |    80.76 |   96.42 |   93.61 | 107,110,144,196,203-204    
+  TableContentsSpring.tsx  |   93.61 |    80.76 |   96.42 |   93.61 | 107,110,144,196,203-204    
+  TableContentsSummer.tsx  |   93.61 |    80.76 |   96.42 |   93.61 | 107,110,144,196,203-204    
+  TableContentsWinter.tsx  |   93.61 |    80.76 |   96.42 |   93.61 | 107,110,144,196,203-204    
+---------------------------|---------|----------|---------|---------|----------------------------
+
+Test Suites: 2 failed, 12 passed, 14 total
+Tests:       3 failed, 121 passed, 124 total
+Snapshots:   0 total
+Time:        46.739 s
+Ran all test suites.
